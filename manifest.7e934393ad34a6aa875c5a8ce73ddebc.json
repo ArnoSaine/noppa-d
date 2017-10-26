@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.e68bdb4fce81120d0b02e08904ba9aaa.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.019d544d2349814cb9a044cc9627b7b3.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.6be0336f35c89f39b714a1655ff80e5f.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.d7dd208ecce6961013a96c13d254a034.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.b7b5481655efc3c3e74941edf57f9cee.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.9aaa6bb60a067120579c42d05f341634.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Noppa D",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "start_url": ".",
+  "publicPath": null,
+  "short_name": "Noppa D",
+  "description": "Formula D Dice Roller – Progressive Web App with React",
+  "background_color": "#ffa500"
+}
