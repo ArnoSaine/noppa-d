@@ -4,7 +4,7 @@ const { resolve } = require('path');
 const OfflinePlugin = require('offline-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 
-const baseHref = '/noppa-d';
+const baseHref = '/noppa-d/';
 const publicPath =
   process.env.npm_lifecycle_event === 'bundle' ? '' : '/build/';
 
@@ -25,7 +25,7 @@ module.exports = {
     }),
     new OfflinePlugin(
       process.env.npm_lifecycle_event === 'bundle'
-        ? { publicPath: '/noppa-d/' }
+        ? { publicPath: baseHref }
         : {}
     ),
     new WebpackPwaManifest({
