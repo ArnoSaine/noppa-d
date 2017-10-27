@@ -1,15 +1,19 @@
 import damage from './damage';
 import gears from './gears';
-import Die from '../Die';
+import Die from './Die';
 
 export const dice = [
   ...gears.map(({ gear, values, ...rest }) => ({
     values,
     ...rest,
-    children: `Gear ${gear} (${Math.min(...values)}-${Math.max(...values)})`
+    children: `Gear ${gear}`
   })),
   damage
-];
+].map(({ children, values, ...rest }) => ({
+  ...rest,
+  values,
+  children: `${children} (${Math.min(...values)}-${Math.max(...values)})`
+}));
 
 export default ({ children, onRoll }) => (
   <div
