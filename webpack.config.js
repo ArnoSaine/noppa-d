@@ -20,8 +20,14 @@ module.exports = {
       template,
       baseHref,
       title: 'Noppa D',
-      mobile: true,
-      meta: [{ name: 'theme-color', content: '#ffa500' }]
+      meta: [
+        { name: 'theme-color', content: '#ffa500' },
+        {
+          name: 'viewport',
+          content:
+            'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+        }
+      ]
     }),
     new OfflinePlugin(
       process.env.npm_lifecycle_event === 'bundle'
