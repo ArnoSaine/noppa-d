@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "bundle": "cross-env NODE_ENV=production webpack -p --progress --config node_modules/frontend-app/lib/webpack/config",
-    "dev-server": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config node_modules/frontend-app/lib/webpack/config"
+    "dev-server": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config node_modules/frontend-app/lib/webpack/config",
+    "deploy": "gh-pages -d build"
   },
   "author": {
     "name": "Arno Saine",
@@ -14,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "frontend-app": "^1.2.0-beta.2",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "2",
     "html-webpack-template": "6",
     "offline-plugin": "^4.8.4",
